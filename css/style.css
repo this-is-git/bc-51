@@ -1,0 +1,156 @@
+:root {
+  --main-color: #8f95a5;
+  --bg-button: #263238;
+  --title-color: #000000;
+  --logo-decor: #939393;
+  --white-color: #fff;
+  --bg-cart: #f5f5f5;
+  --about-num: #2a3246;
+  --price-color: #eeeeee;
+  --gray-color: #546269;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--main-color);
+  font-size: 20px;
+  line-height: calc(54 / 36);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button {
+  font: inherit;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--title-color);
+}
+
+/* header */
+.logo {
+  font-size: 36px;
+  color: var(--title-color);
+}
+
+.logo span {
+  color: var(--logo-decor);
+}
+
+.menu-link {
+  font-weight: 500;
+  color: var(--bg-button);
+}
+
+.header-button {
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+/* Hero */
+
+.hero-title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: calc(80 / 64);
+  color: var(--title-color);
+}
+
+.hero-text {
+  font-size: 24px;
+}
+
+.hero-btn {
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  background-color: var(--bg-button);
+}
+
+/* Skills */
+
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--title-color);
+}
+
+.skills-list__item {
+  background-color: var(--bg-cart);
+}
+
+.skills-list__title {
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--bg-button);
+}
+
+.skills-list__text {
+  font-size: 16px;
+}
+
+.skills-list__btn {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--white-color);
+  background-color: var(--bg-button);
+}
+
+/* About */
+
+.about-text {
+  line-height: calc(36 / 20);
+}
+
+.stats-list__num {
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--about-num);
+}
+
+/* Pricing */
+
+.pricing-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: calc(48 / 30);
+  text-transform: capitalize;
+  color: var(--bg-button);
+}
+
+.pricing-bottom {
+  background-color: var(--price-color);
+}
+
+.pricing-price {
+  font-size: 24px;
+  color: var(--bg-button);
+}
+
+.pricing-period {
+  font-size: 18px;
+  color: var(--gray-color);
+}
+
+/* Contact */
+
+.contact-btn {
+  font-weight: 500;
+  background-color: var(--bg-button);
+  color: var(--white-color);
+  letter-spacing: 0.03em;
+}
+
+.footer-link {
+  font-size: 24px;
+  letter-spacing: 0.02em;
+}
