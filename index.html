@@ -11,92 +11,126 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <a class="logo link" href="./index.html">Brit<span>lex</span></a>
-      <nav>
-        <ul class="list">
-          <li>
-            <a class="menu-link link current" href="./index.html">Home</a>
-          </li>
-          <li><a class="menu-link link" href="#skills">Skills</a></li>
-          <li><a class="menu-link link" href="#about">About Us</a></li>
-          <li><a class="menu-link link" href="#pricing">Pricing</a></li>
-          <li><a class="menu-link link" href="#contacts">Contacts</a></li>
-        </ul>
-      </nav>
-      <button class="header-button button" type="button">
-        Let&rsquo;s Talk
-      </button>
+    <header class="header">
+      <div class="container">
+        <a class="logo link" href="./index.html">Brit<span>lex</span></a>
+        <nav>
+          <ul class="list">
+            <li>
+              <a class="menu-link link" href="./index.html">Home</a>
+            </li>
+            <li><a class="menu-link link current" href="#skills">Skills</a></li>
+            <li><a class="menu-link link" href="#about">About Us</a></li>
+            <li><a class="menu-link link" href="#pricing">Pricing</a></li>
+            <li><a class="menu-link link" href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <button class="header-button" type="button">Let&rsquo;s Talk</button>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title">Learn Any Foreign Language</h1>
-        <p class="hero-text">
-          With our teachers who write a program for each student, you will be
-          able to make your first sketch after the first lesson.
-        </p>
-        <button class="hero-btn button" type="button">Get started</button>
-        <img src="./img/map-languages.png" alt="map languages" width="654" />
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">Learn Any&nbspForeign Language</h1>
+            <p class="hero-text">
+              With our teachers who write a program for each student, you will
+              be able to make your first sketch after the first lesson.
+            </p>
+            <button class="hero-btn button" type="button">Get started</button>
+          </div>
+          <img src="./img/map-languages.png" alt="map languages" width="654" />
+        </div>
       </section>
       <section class="skills">
-        <h2 class="title" id="skills">Skills</h2>
-        <ul class="skills-list list">
-          <li class="skills-list__item">
-            <img src="./img/skills-1.png" alt="dialog" width="390" />
-            <h3 class="skills-list__title">Speaking</h3>
-            <p class="skills-list__text">
-              Improve your English skills and confidence. Live classes and
-              interactive lessons online. 20% extra free for a limited time only
-            </p>
-            <p class="skills-list__text">
-              Learn English online and improve your skills through our
-              high-quality courses and resources – all designed for adult
-              language learners.
-            </p>
-            <button class="skills-list__btn button" type="button">
-              Learn more
-            </button>
-          </li>
-          <li class="skills-list__item">
-            <img src="./img/skills-2.png" alt="writing" width="390" />
-            <h3 class="skills-list__title">Writing</h3>
-            <p class="skills-list__text">
-              One of the most important and extensive areas of natural science,
-              the science that studies substances, also their composition
-            </p>
-            <button class="skills-list__btn button" type="button">
-              Learn more
-            </button>
-          </li>
-          <li class="skills-list__item">
-            <img src="./img/skills-3.png" alt="reading book" width="390" />
-            <h3 class="skills-list__title">Reading</h3>
-            <p class="skills-list__text">
-              Perception and response actions of the user resulting from the use
-              and/or upcoming use of the product, system or service
-            </p>
-            <button class="skills-list__btn button" type="button">
-              Learn more
-            </button>
-          </li>
-          <li class="skills-list__item">
-            <img src="./img/skills-4.png" alt="listening lesson" width="390" />
-            <h3 class="skills-list__title">Listening</h3>
-            <p class="skills-list__text">
-              Here you can find activities to practise your listening skills.
-              Listening will help you to improve your understanding
-            </p>
-            <button class="skills-list__btn button" type="button">
-              Learn more
-            </button>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="skills-title title" id="skills">Skills</h2>
+          <ul class="skills-list list">
+            <li class="skills-list__item">
+              <img
+                class="skills-list__img"
+                src="./img/skills-1.png"
+                alt="dialog"
+                width="390"
+              />
+
+              <h3 class="skills-list__title">Speaking</h3>
+              <p class="skills-list__text">
+                Improve your English skills and confidence. Live classes and
+                interactive lessons online. 20% extra free for a limited time
+                only
+              </p>
+              <p class="skills-list__text">
+                Learn English online and improve your skills through our
+                high-quality courses and resources – all designed for adult
+                language learners.
+              </p>
+              <button class="skills-list__btn" type="button">Learn more</button>
+            </li>
+            <li class="skills-list__item">
+              <img
+                class="skills-list__img"
+                src="./img/skills-2.png"
+                alt="writing"
+                width="390"
+              />
+              <h3 class="skills-list__title">Writing</h3>
+              <p class="skills-list__text">
+                One of the most important and extensive areas of natural
+                science, the science that studies substances, also their
+                composition
+              </p>
+              <button class="skills-list__btn button" type="button">
+                Learn more
+              </button>
+            </li>
+            <li class="skills-list__item">
+              <img
+                class="skills-list__img"
+                src="./img/skills-3.png"
+                alt="reading book"
+                width="390"
+              />
+              <h3 class="skills-list__title">Reading</h3>
+              <p class="skills-list__text">
+                Perception and response actions of the user resulting from the
+                use and/or upcoming use of the product, system or service
+              </p>
+              <button class="skills-list__btn button" type="button">
+                Learn more
+              </button>
+            </li>
+            <li class="skills-list__item">
+              <img
+                class="skills-list__img"
+                src="./img/skills-4.png"
+                alt="listening lesson"
+                width="390"
+              />
+              <h3 class="skills-list__title">Listening</h3>
+              <p class="skills-list__text">
+                Here you can find activities to practise your listening skills.
+                Listening will help you to improve your understanding
+              </p>
+              <button class="skills-list__btn button" type="button">
+                Learn more
+              </button>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="about">
-        <h2 class="title" id="about">About Us</h2>
+        <h2 class="about-title title" id="about">About Us</h2>
         <p class="about-text">
           The model offers a framework for discussing problems related to the
           user's experience, as well as possible ways and means of solving them.
@@ -125,11 +159,15 @@
         />
       </section>
       <section class="pricing">
-        <h2 class="title" id="pricing">Pricing</h2>
-        <ul class="list">
+        <h2 class="pricing-title title" id="pricing">Pricing</h2>
+        <ul class="pricing-list">
           <li>
-            <img src="./img/pricing-1.png" alt="online course" />
-            <h3 class="pricing-title">Self-study online course</h3>
+            <img
+              class="pricing-list-img"
+              src="./img/pricing-1.png"
+              alt="online course"
+            />
+            <h3 class="pricing-list-title">Self-study online course</h3>
             <p class="pricing-text">
               Start learning English online in live classes with qualified EC
               teachers and students from all over the world.
@@ -140,8 +178,12 @@
             </div>
           </li>
           <li>
-            <img src="./img/pricing-2.png" alt="live lesson" />
-            <h3 class="pricing-title">Live online classes</h3>
+            <img
+              class="pricing-list-img"
+              src="./img/pricing-2.png"
+              alt="live lesson"
+            />
+            <h3 class="pricing-list-title">Live online classes</h3>
             <p class="pricing-text">
               Interactive group classes with expert teachers. Free 7-day trial
             </p>
@@ -151,8 +193,12 @@
             </div>
           </li>
           <li>
-            <img src="./img/pricing-3.png" alt="personal lesson" />
-            <h3 class="pricing-title">Personal Tuition</h3>
+            <img
+              class="pricing-list-img"
+              src="./img/pricing-3.png"
+              alt="personal lesson"
+            />
+            <h3 class="pricing-list-title">Personal Tuition</h3>
             <p class="pricing-text">
               Online one-to-one English tutoring – enjoy our first session for
               only $1
@@ -165,32 +211,39 @@
         </ul>
       </section>
       <section class="contact" id="contact">
-        <img src="./img/contact-bg.png" alt="send email" width="425" />
-        <h2 class="title">Contact Us</h2>
-        <p class="contact-text">
-          Discover your current English level by taking our free online English
-          test. Sign up to our newsletter for learning tips and free resources
-        </p>
-        <button class="contact-btn" type="button">Subscribe</button>
+        <div class="container">
+          <img src="./img/contact-bg.png" alt="send email" width="425" />
+          <h2 class="contact-title title">Contact Us</h2>
+          <p class="contact-text">
+            Discover your current English level by taking our free online
+            English test. Sign up to our newsletter for learning tips and free
+            resources
+          </p>
+          <button class="contact-btn" type="button">Subscribe</button>
+        </div>
       </section>
     </main>
-    <footer>
-      <a class="logo link" href="./index.html">Brit<span>lex</span></a>
-      <ul class="list">
-        <li>
-          <a class="footer-link link" href="#" target="_blank"
-            >Terms and Conditions</a
-          >
-        </li>
-        <li>
-          <a class="footer-link link" href="#" target="_blank"
-            >Privacy Policy</a
-          >
-        </li>
-        <li>
-          <a class="footer-link link" href="#" target="_blank">Cookie Policy</a>
-        </li>
-      </ul>
+    <footer class="footer">
+      <div class="container footer-wrapper">
+        <a class="logo link" href="./index.html">Brit<span>lex</span></a>
+        <ul class="list">
+          <li>
+            <a class="footer-link link" href="#" target="_blank"
+              >Terms and Conditions</a
+            >
+          </li>
+          <li>
+            <a class="footer-link link" href="#" target="_blank"
+              >Privacy Policy</a
+            >
+          </li>
+          <li>
+            <a class="footer-link link" href="#" target="_blank"
+              >Cookie Policy</a
+            >
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
