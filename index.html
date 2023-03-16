@@ -22,17 +22,25 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-wrapper">
         <a class="logo link" href="./index.html">Brit<span>lex</span></a>
         <nav>
-          <ul class="list">
-            <li>
+          <ul class="header-menu">
+            <li class="header-menu-item">
               <a class="menu-link link" href="./index.html">Home</a>
             </li>
-            <li><a class="menu-link link current" href="#skills">Skills</a></li>
-            <li><a class="menu-link link" href="#about">About Us</a></li>
-            <li><a class="menu-link link" href="#pricing">Pricing</a></li>
-            <li><a class="menu-link link" href="#contacts">Contacts</a></li>
+            <li class="header-menu-item">
+              <a class="menu-link link current" href="#skills">Skills</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="menu-link link" href="#about">About Us</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="menu-link link" href="#pricing">Pricing</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="menu-link link" href="#contacts">Contacts</a>
+            </li>
           </ul>
         </nav>
         <button class="header-button" type="button">Let&rsquo;s Talk</button>
@@ -40,7 +48,7 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero-wrappper">
           <div class="hero-content">
             <h1 class="hero-title">Learn Any&nbspForeign Language</h1>
             <p class="hero-text">
@@ -117,127 +125,154 @@
                 alt="listening lesson"
                 width="390"
               />
-              <h3 class="skills-list__title">Listening</h3>
-              <p class="skills-list__text">
-                Here you can find activities to practise your listening skills.
-                Listening will help you to improve your understanding
-              </p>
-              <button class="skills-list__btn button" type="button">
-                Learn more
-              </button>
+              <div class="skills-list__content">
+                <h3 class="skills-list__title">Listening</h3>
+                <p class="skills-list__text">
+                  Here you can find activities to practise your listening
+                  skills. Listening will help you to improve your understanding
+                </p>
+                <button class="skills-list__btn button" type="button">
+                  Learn more
+                </button>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="about">
-        <h2 class="about-title title" id="about">About Us</h2>
-        <p class="about-text">
-          The model offers a framework for discussing problems related to the
-          user's experience, as well as possible ways and means of solving them.
-          Application development begins at the top level (strategy), where the
-          future software product is described quite abstractly from the point
-          of view of the expectations of both users and the customer.
-        </p>
-        <ul class="stats-list list">
-          <li class="stats-list__item">
-            <p class="stats-list__num">800</p>
-            <p class="stats-list__members">Pupils</p>
-          </li>
-          <li class="stats-list__item">
-            <p class="stats-list__num">18</p>
-            <p class="stats-list__members">Teachers</p>
-          </li>
-          <li class="stats-list__item">
-            <p class="stats-list__num">6</p>
-            <p class="stats-list__members">Foreign languages</p>
-          </li>
-        </ul>
-        <img
-          src="./img/about-bg.png"
-          alt="together with us to success"
-          width="540"
-        />
+        <div class="container about-wrapper">
+          <div class="about-content">
+            <h2 class="about-title title" id="about">About Us</h2>
+            <p class="about-text">
+              The model offers a framework for discussing problems related to
+              the user's experience, as well as possible ways and means of
+              solving them. Application development begins at the top level
+              (strategy), where the future software product is described quite
+              abstractly from the point of view of the expectations of both
+              users and the customer.
+            </p>
+            <ul class="stats-list list">
+              <li class="stats-list__item">
+                <p class="stats-list__num">800</p>
+                <p class="stats-list__members">Pupils</p>
+              </li>
+              <li class="stats-list__item">
+                <p class="stats-list__num">18</p>
+                <p class="stats-list__members">Teachers</p>
+              </li>
+              <li class="stats-list__item">
+                <p class="stats-list__num">6</p>
+                <p class="stats-list__members">Foreign languages</p>
+              </li>
+            </ul>
+          </div>
+          <img
+            src="./img/about-bg.png"
+            alt="together with us to success"
+            width="540"
+          />
+        </div>
       </section>
       <section class="pricing">
-        <h2 class="pricing-title title" id="pricing">Pricing</h2>
-        <ul class="pricing-list">
-          <li>
-            <img
-              class="pricing-list-img"
-              src="./img/pricing-1.png"
-              alt="online course"
-            />
-            <h3 class="pricing-list-title">Self-study online course</h3>
-            <p class="pricing-text">
-              Start learning English online in live classes with qualified EC
-              teachers and students from all over the world.
-            </p>
-            <div class="pricing-bottom">
-              <p class="pricing-price">&pound;5.99</p>
-              <p class="pricing-period">per month</p>
-            </div>
-          </li>
-          <li>
-            <img
-              class="pricing-list-img"
-              src="./img/pricing-2.png"
-              alt="live lesson"
-            />
-            <h3 class="pricing-list-title">Live online classes</h3>
-            <p class="pricing-text">
-              Interactive group classes with expert teachers. Free 7-day trial
-            </p>
-            <div class="pricing-bottom">
-              <p class="pricing-price">&pound;12.99</p>
-              <p class="pricing-period">per month</p>
-            </div>
-          </li>
-          <li>
-            <img
-              class="pricing-list-img"
-              src="./img/pricing-3.png"
-              alt="personal lesson"
-            />
-            <h3 class="pricing-list-title">Personal Tuition</h3>
-            <p class="pricing-text">
-              Online one-to-one English tutoring – enjoy our first session for
-              only $1
-            </p>
-            <div class="pricing-bottom">
-              <p class="pricing-price">&pound;12.99</p>
-              <p class="pricing-period">per month</p>
-            </div>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="pricing-title title" id="pricing">Pricing</h2>
+          <ul class="pricing-list">
+            <li class="pricing-list__item">
+              <div class="img-box">
+                <img
+                  class="pricing-list-img"
+                  src="./img/pricing-1.png"
+                  alt="online course"
+                  width="280"
+                />
+              </div>
+              <div class="pricing-list__midle">
+                <h3 class="pricing-list-title">Self-study online course</h3>
+                <p class="pricing-text">
+                  Start learning English online in live classes with qualified
+                  EC teachers and students from all over the world.
+                </p>
+              </div>
+              <div class="pricing-bottom">
+                <p class="pricing-price">&pound;5.99</p>
+                <p class="pricing-period">per month</p>
+              </div>
+            </li>
+            <li class="pricing-list__item">
+              <div class="img-box">
+                <img
+                  class="pricing-list-img"
+                  src="./img/pricing-2.png"
+                  alt="live lesson"
+                  width="390"
+                />
+              </div>
+              <div class="pricing-list__midle">
+                <h3 class="pricing-list-title">Live online classes</h3>
+                <p class="pricing-text">
+                  Interactive group classes with expert teachers. Free 7-day
+                  trial
+                </p>
+              </div>
+              <div class="pricing-bottom">
+                <p class="pricing-price">&pound;12.99</p>
+                <p class="pricing-period">per month</p>
+              </div>
+            </li>
+            <li class="pricing-list__item">
+              <div class="img-box">
+                <img
+                  class="pricing-list-img"
+                  src="./img/pricing-3.png"
+                  alt="personal lesson"
+                  width="315"
+                />
+              </div>
+              <div class="pricing-list__midle">
+                <h3 class="pricing-list-title">Personal Tuition</h3>
+                <p class="pricing-text">
+                  Online one-to-one English tutoring – enjoy our first session
+                  for only $1
+                </p>
+              </div>
+              <div class="pricing-bottom">
+                <p class="pricing-price">&pound;12.99</p>
+                <p class="pricing-period">per month</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="contact" id="contact">
-        <div class="container">
+        <div class="container contact-wrapper">
           <img src="./img/contact-bg.png" alt="send email" width="425" />
-          <h2 class="contact-title title">Contact Us</h2>
-          <p class="contact-text">
-            Discover your current English level by taking our free online
-            English test. Sign up to our newsletter for learning tips and free
-            resources
-          </p>
-          <button class="contact-btn" type="button">Subscribe</button>
+          <div class="contact-content">
+            <h2 class="contact-title title">Contact Us</h2>
+            <p class="contact-text">
+              Discover your current English level by taking our free online
+              English test. Sign up to our newsletter for learning tips and free
+              resources
+            </p>
+            <button class="contact-btn" type="button">Subscribe</button>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container footer-wrapper">
         <a class="logo link" href="./index.html">Brit<span>lex</span></a>
-        <ul class="list">
-          <li>
+        <ul class="footer-list">
+          <li class="footer-list__item">
             <a class="footer-link link" href="#" target="_blank"
               >Terms and Conditions</a
             >
           </li>
-          <li>
+          <li class="footer-list__item">
             <a class="footer-link link" href="#" target="_blank"
               >Privacy Policy</a
             >
           </li>
-          <li>
+          <li class="footer-list__item">
             <a class="footer-link link" href="#" target="_blank"
               >Cookie Policy</a
             >

@@ -72,6 +72,21 @@ header {
 .logo {
   font-size: 36px;
   color: var(--title-color);
+  margin-right: auto;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  margin-right: 131px;
+}
+
+.header-menu-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .logo span {
@@ -97,6 +112,12 @@ header {
 .hero {
   padding-top: 101px;
   padding-bottom: 134px;
+}
+
+.hero-wrappper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .hero-content {
@@ -143,10 +164,27 @@ header {
   color: var(--title-color);
 }
 
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
 .skills-list__item {
   padding: 32px 18px;
-  padding-bottom: 154px;
   background-color: var(--bg-cart);
+}
+
+.skills-list__item:first-child {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.skills-list__item:last-child {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .skills-list__img {
@@ -185,6 +223,15 @@ header {
   padding-bottom: 206px;
 }
 
+.about-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-content {
+  margin-right: 146px;
+}
+
 .about-title {
   margin-bottom: 60px;
 }
@@ -192,6 +239,17 @@ header {
 .about-text {
   line-height: calc(36 / 20);
   margin-bottom: 30px;
+}
+
+.stats-list {
+  display: flex;
+  gap: 130px;
+  justify-content: center;
+  text-align: center;
+}
+
+.stats-list__item {
+  max-width: 113px;
 }
 
 .stats-list__num {
@@ -209,10 +267,23 @@ header {
 
 .pricing-title {
   margin-bottom: 100px;
-  align-items: center;
+  text-align: center;
 }
 
-.pricing-list-img {
+.pricing-list {
+  display: flex;
+  gap: 30px;
+}
+
+.pricing-list__item {
+  flex-basis: calc((100% - 60px) / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.img-box {
+  height: 320px;
   margin-bottom: 33px;
 }
 
@@ -225,9 +296,13 @@ header {
 }
 
 .pricing-bottom {
+  display: flex;
+  align-items: center;
   max-width: 260px;
+  justify-content: space-between;
   padding: 5px 23px;
   background-color: var(--price-color);
+  margin-top: auto;
 }
 
 .pricing-price {
@@ -248,6 +323,15 @@ header {
 
 .contact-title {
   margin-bottom: 60px;
+}
+
+.contact-wrapper {
+  display: flex;
+}
+
+.contact-content {
+  margin-left: auto;
+  max-width: 767px;
 }
 
 .contact-text {
@@ -276,4 +360,19 @@ header {
 
 .footer-wrapper {
   border-top: 1px solid #c4c4c4;
+  display: flex;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+}
+
+.footer-list__item:not(:last-child) {
+  margin-right: 80px;
+}
+
+.footer-link {
+  padding-top: 22px;
+  display: block;
 }
