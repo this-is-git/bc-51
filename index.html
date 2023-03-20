@@ -30,10 +30,10 @@
               <a class="menu-link link" href="./index.html">Home</a>
             </li>
             <li class="header-menu-item">
-              <a class="menu-link link current" href="#skills">Skills</a>
+              <a class="menu-link link" href="#skills">Skills</a>
             </li>
             <li class="header-menu-item">
-              <a class="menu-link link" href="#about">About Us</a>
+              <a class="menu-link link current" href="#about">About Us</a>
             </li>
             <li class="header-menu-item">
               <a class="menu-link link" href="#pricing">Pricing</a>
@@ -43,7 +43,9 @@
             </li>
           </ul>
         </nav>
-        <button class="header-button" type="button">Let&rsquo;s Talk</button>
+        <button class="header-button" data-modal-open type="button">
+          Let&rsquo;s Talk
+        </button>
       </div>
     </header>
     <main>
@@ -241,6 +243,25 @@
               </div>
             </li>
           </ul>
+          <ul class="test-list">
+            <li class="test-list-item">
+              <a class="test-list-link" href="">
+                <div class="wrapper">
+                  <img src="./img/skills-1.png" alt="sadasdsad" />
+                  <div class="overlay">
+                    <p class="overlay-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Autem, et.
+                    </p>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>asd</h3>
+                  <p>fgfhf</p>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="contact" id="contact">
@@ -316,5 +337,15 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>
+          <svg width="16" height="16">
+            <use href="./img/symbol-defs.svg#icon-twitter"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
