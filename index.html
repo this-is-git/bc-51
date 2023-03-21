@@ -168,11 +168,26 @@
               </li>
             </ul>
           </div>
-          <img
-            src="./img/about-bg.png"
-            alt="together with us to success"
-            width="540"
-          />
+          <div class="">
+            <img
+              src="./img/about-bg.png"
+              alt="together with us to success"
+              width="540"
+            />
+            <form class="footer-form">
+              <input
+                class="footer-form-input"
+                type="email"
+                placeholder="email"
+              />
+              <button class="footer-form-btn" type="submit">
+                submit
+                <svg class="submit-icon" width="35" height="30">
+                  <use href="./img/symbol-defs.svg#icon-insta"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </section>
       <section class="pricing">
@@ -337,7 +352,7 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
           <svg width="16" height="16">
