@@ -337,13 +337,67 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
           <svg width="16" height="16">
             <use href="./img/symbol-defs.svg#icon-twitter"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <strong>Lorem ipsum dolor sit amet</strong>
+          <div class="modal-group">
+            <label class="modal-label" for="name">user name</label>
+            <div class="input-wrapper">
+              <input class="modal-input" type="text" id="name" />
+              <svg class="modal-icon" width="16" height="16">
+                <use href="./img/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-group">
+            <label class="modal-label" for="tel">telephone</label>
+            <div class="input-wrapper">
+              <input class="modal-input" type="tel" id="tel" />
+              <svg class="modal-icon" width="16" height="16">
+                <use href="./img/symbol-defs.svg#icon-insta"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-group">
+            <label class="modal-label" for="email">email</label>
+            <div class="input-wrapper">
+              <input class="modal-input" type="email" id="email" />
+              <svg class="modal-icon" width="16" height="16">
+                <use href="./img/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-group">
+            <label class="modal-label" for="comment">comment</label>
+            <textarea
+              class="modal-comments"
+              name="comment"
+              id="comment"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="modal-checkbox">
+            <input
+              class="modal-checkbox-input visually-hidden"
+              type="checkbox"
+              id="checkbox"
+            />
+            <label class="modal-checkbox-label" for="checkbox">
+              <span class="modal-checkbox-custom">
+                <svg class="modal-checkbox-icon" width="16" height="16">
+                  <use href="./img/symbol-defs.svg#icon-insta"></use>
+                </svg>
+              </span>
+              Lorem ipsum dolor </label
+            ><a href="">sit amet</a>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

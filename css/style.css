@@ -36,6 +36,10 @@ a {
   color: inherit;
 }
 
+textarea {
+  resize: none;
+}
+
 button {
   padding: 0;
   border: none;
@@ -61,6 +65,20 @@ body {
   font-weight: 600;
   font-size: 48px;
   color: var(--title-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* header */
@@ -444,6 +462,7 @@ header {
   min-height: 550px;
   background-color: #fff;
   transition: 250ms transform linear;
+  padding: 30px;
 }
 
 .backdrop.is-hidden > .modal {
@@ -513,4 +532,70 @@ header {
   height: 4px;
   background-color: #950000;
   border-radius: 2px;
+}
+
+.modal-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.modal-group:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.modal-input {
+  border: 1px solid black;
+  width: 100%;
+  height: 40px;
+  padding-left: 35px;
+  padding-right: 5px;
+  font-size: 14px;
+  outline: transparent;
+  transition: border-color 250ms linear;
+}
+
+.modal-input:focus + .modal-icon {
+  fill: #3c0adf;
+}
+
+.modal-input:focus {
+  border-color: #3c0adf;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  transition: fill 250ms linear;
+}
+
+.modal-comments {
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+
+.modal-checkbox-icon {
+  fill: currentColor;
+}
+
+.modal-checkbox-custom {
+  display: flex;
+  height: 20px;
+  width: 20px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  color: transparent;
+  transition: color 250ms linear 350ms, background-color 250ms linear;
+}
+
+.modal-checkbox-input:checked + .modal-checkbox-label > .modal-checkbox-custom {
+  color: black;
+  background-color: #00ddff;
 }
