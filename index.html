@@ -21,10 +21,12 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    -
     <header class="header">
       <div class="container header-wrapper">
         <a class="logo link" href="./index.html">Brit<span>lex</span></a>
-        <nav>
+        <button class="header-burger js-open-menu" type="button">open</button>
+        <nav class="header-nav">
           <ul class="header-menu">
             <li class="header-menu-item">
               <a class="menu-link link" href="./index.html">Home</a>
@@ -51,6 +53,12 @@
     <main>
       <section class="hero">
         <div class="container hero-wrappper">
+          <img
+            class="hero-img"
+            src="./img/map-languages.png"
+            alt="map languages"
+            width="299"
+          />
           <div class="hero-content">
             <h1 class="hero-title">Learn Any&nbspForeign Language</h1>
             <p class="hero-text">
@@ -59,7 +67,6 @@
             </p>
             <button class="hero-btn button" type="button">Get started</button>
           </div>
-          <img src="./img/map-languages.png" alt="map languages" width="654" />
         </div>
       </section>
       <section class="skills">
@@ -71,7 +78,7 @@
                 class="skills-list__img"
                 src="./img/skills-1.png"
                 alt="dialog"
-                width="390"
+                width="318"
               />
 
               <h3 class="skills-list__title">Speaking</h3>
@@ -92,7 +99,7 @@
                 class="skills-list__img"
                 src="./img/skills-2.png"
                 alt="writing"
-                width="390"
+                width="318"
               />
               <h3 class="skills-list__title">Writing</h3>
               <p class="skills-list__text">
@@ -109,7 +116,7 @@
                 class="skills-list__img"
                 src="./img/skills-3.png"
                 alt="reading book"
-                width="390"
+                width="318"
               />
               <h3 class="skills-list__title">Reading</h3>
               <p class="skills-list__text">
@@ -125,7 +132,7 @@
                 class="skills-list__img"
                 src="./img/skills-4.png"
                 alt="listening lesson"
-                width="390"
+                width="202"
               />
               <div class="skills-list__content">
                 <h3 class="skills-list__title">Listening</h3>
@@ -141,7 +148,7 @@
           </ul>
         </div>
       </section>
-      <section class="about">
+      <!-- <section class="about">
         <div class="container about-wrapper">
           <div class="about-content">
             <h2 class="about-title title" id="about">About Us</h2>
@@ -221,7 +228,7 @@
                   class="pricing-list-img"
                   src="./img/pricing-2.png"
                   alt="live lesson"
-                  width="390"
+                  width="318"
                 />
               </div>
               <div class="pricing-list__midle">
@@ -292,9 +299,9 @@
             <button class="contact-btn" type="button">Subscribe</button>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-wrapper">
         <a class="logo link" href="./index.html">Brit<span>lex</span></a>
         <ul class="footer-list">
@@ -351,7 +358,7 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
@@ -415,6 +422,36 @@
         </form>
       </div>
     </div>
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu-close js-close-menu" type="button">
+        closed
+      </button>
+      <ul class="modal-list">
+        <li><a href="fdgfdgfdgf">Skills</a></li>
+        <li><a href="12321321321">About Us</a></li>
+        <li><a href="kkkkk">Pricing</a></li>
+        <li><a href="dddddd">Contacts</a></li>
+      </ul>
+      <div class="modal-wrapper">
+        <ul>
+          <li><a href="fdgfdgfdgf">Skills</a></li>
+          <li><a href="12321321321">About Us</a></li>
+        </ul>
+        <ul>
+          <li><a href="fdgfdgfdgf">Skills</a></li>
+          <li><a href="12321321321">About Us</a></li>
+          <li><a href="kkkkk">Pricing</a></li>
+          <li><a href="dddddd">Contacts</a></li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
