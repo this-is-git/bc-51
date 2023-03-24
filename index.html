@@ -22,7 +22,7 @@
   </head>
   <body>
     -
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-wrapper">
         <a class="logo link" href="./index.html">Brit<span>lex</span></a>
         <button class="header-burger js-open-menu" type="button">open</button>
@@ -49,16 +49,56 @@
           Let&rsquo;s Talk
         </button>
       </div>
-    </header>
+    </header> -->
     <main>
-      <section class="hero">
-        <div class="container hero-wrappper">
-          <img
+      <!-- <section class="hero">
+        <div class="container hero-wrappper"> -->
+      <!-- <img
             class="hero-img"
-            src="./img/map-languages.png"
+            srcset="
+              ./img/hero-bg.png                   654w,
+              ./img/tablet/hero-bg-tablet.png     352w,
+              ./img/mobile/hero-bg-mobile.png     299w,
+              ./img/about-bg@2x.png              1308w,
+              ./img/tablet/hero-bg-tablet@2x.png  704w,
+              ./img/mobile/hero-bg-mobile@2x.png  598w
+            "
+            sizes=" (min-width: 1378px) 654px, (min-width: 768px) 352px, (max-width: 767px) 299px, "
+            src="./img/mobile/hero-bg-mobile.png"
             alt="map languages"
-            width="299"
-          />
+          /> -->
+      <!-- <img
+            class="hero-img"
+            srcset="
+              ./img/mobile/hero-bg-mobile.png    1x,
+              ./img/mobile/hero-bg-mobile@2x.png 2x
+            "
+            src="./img/mobile/hero-bg-mobile.png"
+            alt="map languages"
+          /> -->
+
+      <!-- <picture>
+            <source
+              srcset="./img/hero-bg.png 1x, ./img/about-bg@2x.png 2x"
+              media="(min-width:1378px)"
+            />
+            <source
+              srcset="
+                ./img/tablet/hero-bg-tablet.png    1x,
+                ./img/tablet/hero-bg-tablet@2x.png 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ./img/mobile/hero-bg-mobile.png    1x,
+                ./img/mobile/hero-bg-mobile@2x.png 2x
+              "
+              media="(max-width:767px)"
+            />
+
+            <img src="./img/mobile/hero-bg-mobile.png" alt="" />
+          </picture>
           <div class="hero-content">
             <h1 class="hero-title">Learn Any&nbspForeign Language</h1>
             <p class="hero-text">
@@ -147,57 +187,47 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- <section class="about">
-        <div class="container about-wrapper">
-          <div class="about-content">
-            <h2 class="about-title title" id="about">About Us</h2>
-            <p class="about-text">
-              The model offers a framework for discussing problems related to
-              the user's experience, as well as possible ways and means of
-              solving them. Application development begins at the top level
-              (strategy), where the future software product is described quite
-              abstractly from the point of view of the expectations of both
-              users and the customer.
-            </p>
-            <ul class="stats-list list">
-              <li class="stats-list__item">
-                <p class="stats-list__num">800</p>
-                <p class="stats-list__members">Pupils</p>
-              </li>
-              <li class="stats-list__item">
-                <p class="stats-list__num">18</p>
-                <p class="stats-list__members">Teachers</p>
-              </li>
-              <li class="stats-list__item">
-                <p class="stats-list__num">6</p>
-                <p class="stats-list__members">Foreign languages</p>
-              </li>
-            </ul>
-          </div>
-          <div class="">
-            <img
-              src="./img/about-bg.png"
-              alt="together with us to success"
-              width="540"
-            />
-            <form class="footer-form">
-              <input
-                class="footer-form-input"
-                type="email"
-                placeholder="email"
+      </section> -->
+      <section class="about">
+        <div class="container">
+          <h2 class="about-title title" id="about">About Us</h2>
+          <div class="about-wrapper">
+            <div class="">
+              <img
+                class="about-img"
+                src="./img/mobile/bg.png"
+                alt="together with us to success"
+                width="283"
               />
-              <button class="footer-form-btn" type="submit">
-                submit
-                <svg class="submit-icon" width="35" height="30">
-                  <use href="./img/symbol-defs.svg#icon-insta"></use>
-                </svg>
-              </button>
-            </form>
+            </div>
+            <div class="about-content">
+              <p class="about-text">
+                The model offers a framework for discussing problems related to
+                the user's experience, as well as possible ways and means of
+                solving them. Application development begins at the top level
+                (strategy), where the future software product is described quite
+                abstractly from the point of view of the expectations of both
+                users and the customer.
+              </p>
+              <ul class="stats-list list">
+                <li class="stats-list__item">
+                  <p class="stats-list__num">800</p>
+                  <p class="stats-list__members">Pupils</p>
+                </li>
+                <li class="stats-list__item">
+                  <p class="stats-list__num">18</p>
+                  <p class="stats-list__members">Teachers</p>
+                </li>
+                <li class="stats-list__item">
+                  <p class="stats-list__num">6</p>
+                  <p class="stats-list__members">Foreign languages</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
-      <section class="pricing">
+      <!-- <section class="pricing">
         <div class="container">
           <h2 class="pricing-title title" id="pricing">Pricing</h2>
           <ul class="pricing-list">
